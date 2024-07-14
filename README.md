@@ -1,10 +1,10 @@
-# Nothing Phone (2a) Archive
+# CMF Phone (1) Archive
 
-* A comprehensive collection of unmodified Stock OTA images for Nothing Phone (2a).
+* A comprehensive collection of unmodified Stock OTA images for CMF Phone (1).
 
 ## Downloads
 
-- Downloads are tagged with `POST_OTA_VERSION` & `NothingOS version` [here](https://github.com/spike0en/Pacman_Archive/releases). It is to be noted that the releases are compatible with all regional variants of the device.
+- Downloads are tagged with `POST_OTA_VERSION` & `NothingOS version` [here](https://github.com/spike0en/Tetris_Archive/releases). It is to be noted that the releases are compatible with all regional variants of the device.
 
 - Official Full OTA Update Package is marked `-FullOTA`. Extract the splitted 7z parts to get the `<name>-FullOTA.zip`.
 
@@ -24,9 +24,9 @@ odm, vendor, system_ext, system, vendor_dlkm, odm_dlkm, system_dlkm, product, vb
 ```
 ### Firmware partition (marked `-image-firmware.7z`)
 
-Includes 22 images:
+Includes 20 images:
 ```bash
-apusys, audio_dsp, ccu, connsys_bt, connsys_gnss, connsys_wifi, dpm, gpueb, gz, lk, logo, mcf_ota, mcupm, md1img, mvpu_algo, pi_img, preloader_raw, scp, spmfw, sspm, tee & vcp
+apusys, ccu, connsys_bt, connsys_gnss, connsys_wifi, dpm, gpueb, gz, lk, logo, mcf_ota, modem, mcupm, pi_img, preloader_raw, scp, spmfw, sspm, tee & vcp
 ```
 
 ## Disclaimer
@@ -41,7 +41,7 @@ apusys, audio_dsp, ccu, connsys_bt, connsys_gnss, connsys_wifi, dpm, gpueb, gz, 
 
 ## Fastboot Flashing
 
-- To flash the stock, unmodified images with fastboot, extract the files using 7z and use [Pacman_fastboot_flasher](https://github.com/nothing-Pacman/Pacman_fastboot_flasher).
+- A working script for the same will be updated here in due time. 
 
 - Please download and use the latest fastboot [directly from Google](https://developer.android.com/tools/releases/platform-tools). Compatible USB drivers can be obtained from [here](https://developer.android.com/studio/run/win-usb).
 
