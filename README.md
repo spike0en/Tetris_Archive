@@ -37,7 +37,7 @@ apusys, ccu, connsys_bt, connsys_gnss, connsys_wifi, dpm, gpueb, gz, lk, logo, m
 
 - SHA-1 hash of `<name>-FullOTA.zip` file has been provided. It is to be noted that the built-in NothingOS Offline Updater Tool autonomously verifies file integrity. It initiates the update process only if the file aligns with the hash values specified in `payload-properties.txt`, which is obtained during the creation of the update package.
 
-- For further inquiries, discussions, and engaging content, users are encouraged to explore the [Nothing Phone (2a) Telegram Community](https://t.me/NothingPhone2a)
+- For further inquiries, discussions, and engaging content, users are encouraged to explore the [CMF Phone (1) Telegram Community](https://t.me/CMFPhone1)
 
 ## Fastboot Flashing
 
