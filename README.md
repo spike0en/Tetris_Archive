@@ -41,7 +41,7 @@ apusys, ccu, connsys_bt, connsys_gnss, connsys_wifi, dpm, gpueb, gz, lk, logo, m
 
 ## Fastboot Flashing
 
-- A working script for the same will be updated here in due time. 
+- To flash the stock, unmodified images with fastboot, extract the files using 7z and use [Tetris Fastboot Flasher](https://github.com/spike0en/Nothing_Fastboot_Flasher/tree/tetris).
 
 - Please download and use the latest fastboot [directly from Google](https://developer.android.com/tools/releases/platform-tools). Compatible USB drivers can be obtained from [here](https://developer.android.com/studio/run/win-usb).
 
