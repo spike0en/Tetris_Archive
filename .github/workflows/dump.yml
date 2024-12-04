@@ -1,4 +1,4 @@
-name: Pong Firmware Dumper
+name: Nothing SDM Firmware Dumper
 
 on:
   workflow_dispatch:
