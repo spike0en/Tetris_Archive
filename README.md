@@ -1,16 +1,18 @@
 # Nothing Phone (1) Archive
 
-* A comprehensive collection of unmodified Full OTA update packages & stock OTA images for Nothing Phone (1).
+* A comprehensive collection of unmodified stock OTA images for Nothing Phone (1). 
 
+---
 
 ## Downloads
 
-- Downloads are tagged with POST_OTA_VERSION & NothingOS version [here](https://github.com/spike0en/Nothing_SDM_Archive/releases?q=spacewar&expanded=true).
-- Official Full OTA Update Package is marked `-FullOTA`. Extract the splitted 7z parts to get the `<name>-FullOTA.zip`.
+- Downloads are tagged with `POST_OTA_VERSION` and `NothingOS version` [here](https://github.com/spike0en/nothing_sdm_archive/releases?q=spacewar&expanded=true). It is to be noted that the releases are compatible with all regional variants of the device.
+
+---
 
 ## Categories
 
-- The Stock OTA image files are categorized and archived in .7z format based on `boot`, `logical`, and `firmware` categories.
+The stock OTA image files are categorized and archived in `.7z` format based on **boot**, **logical**, and **firmware** categories as follows:
 
 ### Boot (marked `-image-boot.7z`)
 
@@ -31,59 +33,77 @@ Includes 18 images:
 abl, aop, bluetooth, cpucp, devcfg, dsp, featenabler, hyp, imagefv, keymaster, modem, multiimgoem, qupfw, shrm, tz, uefisecapp, xbl & xbl_config
 ```
 
+---
+
 ## Disclaimer
 
 - While this is a collection of unmodified images, you still need to have the bootloader unlocked.
-
 - You can re-lock the bootloader after flashing images.
+- Full OTA update packages may not be consistently available for every release. Uploading of the same has currently been discontinued. Users should refer to the release notes and look for links ending with `(full)`, if mentioned, corresponding to the specific build.
+- For further inquiries, discussions, and engaging content, users are encouraged to explore the [Nothing Phone (1) Telegram Community](https://t.me/NothingPhone1).
 
-- SHA-1 hash of `<name>-FullOTA.zip` file has been provided. It is to be noted that the built-in NothingOS Offline Updater Tool autonomously verifies file integrity. It initiates the update process only if the file aligns with the hash values specified in `payload-properties.txt`, which is obtained during the creation of the update package.
+---
 
-- For further inquiries, discussions, and engaging content, users are encouraged to explore the [Nothing Phone (1) Telegram Community](https://t.me/NothingPhone1)
+## Flashing the Stock ROM Using Fastboot
+
+- Download and use the latest version of Fastboot [directly from Google](https://developer.android.com/tools/releases/platform-tools). Compatible USB drivers can be obtained from [here](https://developer.android.com/studio/run/win-usb). Ensure the `Android Bootloader Interface` is visible in the Device Manager when your device is in bootloader mode before initiating the flashing process.
   
-## Fastboot Flashing
+- To flash the stock, unmodified images via Fastboot:
+  - Extract the downloaded files using [7zip](https://www.7-zip.org/). If you are using Windows, select the `boot`, `firmware`, and `logical 001-003.7z` files all at once, right-click, and choose **Extract to** `"*\"`. Linux users can use the command `7za -y x "*7z*"`
+  - Move all images into a single folder along with the [Spacewar_fastboot_flasher](https://github.com/spike0en/Nothing_Fastboot_Flasher/tree/spacewar) script.
+  - Run the script, while being connected to the internet, and follow the prompts:
+     - Choose whether to wipe data: `(Y/N)`
+     - Flash to both slots: `(Y/N)`
+     - Disable Android Verified Boot: `(N)`
 
-- To flash the stock, unmodified images with fastboot, extract the `.img` files using an utility such as [7zip](https://7-zip.org/download.html) and use the respective flashing script from [Nothing_Fastboot_Flasher](https://github.com/spike0en/Nothing_Fastboot_Flasher/tree/spacewar).
+- Verify that all partitions have been successfully flashed. 
+  - If so, choose Reboot to system: `(Y)`
+  - If any errors occur, reboot to bootloader and flash again after addressing the cause of failure. Proceeding with `Reboot to system` in such cases may result in a soft or hard bricked device.
+    
+- If you have any further doubts, refer to this [detailed guide](https://telegra.ph/Guide-for-flashing-Stock-ROM-on-Nothing-Phone-2-04-22).
 
-- The user must install the latest [Google USB drivers](https://developer.android.com/studio/run/win-usb) before flashing.
-  
-- If you optionally want to have dm-verity disabled, perform:
+---
 
-``` bash
-fastboot update --disable-verity --disable-verification vbmeta.img
-```
-- Alternatively users can follow this [detailed flashing guide](https://telegra.ph/Guide-for-flashing-Stock-ROM-on-Nothing-Phone-2-04-22).
+## Updating Procedures:
 
-## Manual Sideloading of Full OTA Packages
+### A. Manual Sideloading of Incremental OTA Updates:
 
-### A. Via Stock Nothing Offline OTA Updater Tool (Locked BL): 
+This can be done using Nothing's built-in Offline Updater Tool, with a **locked bootloader**, as follows:
 
-1. To flash stock, unmodified official Full OTA packages, extract the files using 7z to obtain the <name>-FullOTA.zip file.
-2. Using your preferred file manager, create a folder named 'ota' at the root of your storage.
-3. Copy the <name>-FullOTA.zip into the newly created 'ota' folder.
-4. Open your dial pad and type `*#*#682#*#*`.
-5. The manual update utility will launch, scanning and locating your previously downloaded update file.
-6. Tap to begin the update. The process will take about 10-15 minutes (duration may vary).
-7. Enjoy your updated device after reboot!
+- Identify the incremental OTA zip files in the release body corresponding to their build numbers. Download the appropriate zip file by clicking on the respective build number. The last one listed is typically the latest.
+- Ensure that the incremental OTA package matches the target pre-OTA build version of your device. If the versions do not match, the update will fail. You can verify this by extracting the zip file and checking the `payload_properties.txt`.
+- Using a file manager, create a folder named `ota` in the root of your storage.
+- Copy the zip file into the newly created `ota` folder.
+- Open the dial pad and enter `*#*#682#*#*`.
+- The manual update utility will launch, scanning for and locating your downloaded update file.
+- Tap to begin the update. The process typically takes 10–15 minutes but may vary.
+- Once the update is complete, reboot your device and enjoy the updated software!
 
-### B. Via Custom Recovery (Unlocked BL):
+### B. Clean Flashing the Full OTA Update Package via Custom Recovery:
 
-- Alternatively, users can directly flash these full OTA packages using available custom recoveries for Nothing Phone (1).
+- Make sure that your bootloader is unlocked and a custom recovery like TWRP/OFOX is installed.
+- Flash the `<name>-FullOTA.zip` file (if available in the release) directly using the recovery.
+- Format data from the recovery itself after flashing is completed and reboot to system.
+- Note that incremental OTA zips **cannot** be flashed using this method.
 
+---
 
 ## Integrity Check
 
-- You can check the downloaded file's integrity with one of the following commands (for logical):
+- You can check the downloaded file's integrity with one of the following commands :
 
 ``` bash
-md5sum -c *-hash.md5
-sha1sum -c *-hash.sha1
-sha256sum -c *-hash.sha256
-xxh128sum -c *-hash.xxh128
+  md5sum -c *-hash.md5
+  sha1sum -c *-hash.sha1
+  sha256sum -c *-hash.sha256
+  xxh128sum -c *-hash.xxh128
 ```
-
 - xxh128 is usually the fastest.
 
+---
 
 ### Thanks to
 - [luk1337](https://github.com/luk1337/oplus_archive) & [arter97](https://github.com/arter97/nothing_archive) for their great work!
+- [Hellboy017](https://github.com/HELLBOY017) for his assistance to make the [Pong Fastboot Flasher](https://github.com/HELLBOY017/Pong_fastboot_flasher).
+
+---
