@@ -6,7 +6,7 @@
 
 ## Downloads
 
-- Downloads are tagged with `POST_OTA_VERSION` & `NothingOS version` [here](https://github.com/spike0en/nothing_mtk_archive/releases?q=tetris&expanded=true). It is to be noted that the releases are compatible with all regional variants of the device.
+- Downloads are tagged with `POST_OTA_VERSION` & `NothingOS version` [here](https://github.com/spike0en/nothing_archive/releases?q=tetris&expanded=true). It is to be noted that the releases are compatible with all regional variants of the device.
 
 ---
 
