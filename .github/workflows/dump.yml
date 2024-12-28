@@ -1,4 +1,4 @@
-name: Nothing SDM Firmware Dumper
+name: Nothing Firmware Dumper
 
 on:
   workflow_dispatch:
