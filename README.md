@@ -1,4 +1,7 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/spike0en/nothing_archive)![GitHub repo size](https://img.shields.io/github/repo-size/spike0en/nothing_archive)[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%23754400&title_bg=%235F5F5F&icon=awesomelists.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)[![shields.io Stars](https://img.shields.io/github/stars/spike0en/nothing_archive)](https://github.com/spike0en/nothing_archive)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/spike0en/nothing_archive)  ![GitHub repo size](https://img.shields.io/github/repo-size/spike0en/nothing_archive)  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%23754400&title_bg=%235F5F5F&icon=awesomelists.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)  [![shields.io Stars](https://img.shields.io/github/stars/spike0en/nothing_archive)](https://github.com/spike0en/nothing_archive)
+
+[日本語](/README_ja-JP.md)
 
 # Nothing Archive  
 
