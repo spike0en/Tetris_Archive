@@ -6,7 +6,7 @@
 
 ## Downloads
 
-- Downloads are tagged with `POST_OTA_VERSION` & `NothingOS version` for [Phone (2a)](https://github.com/spike0en/nothing_archive/releases?q=pacman&expanded=true) & [Phone (2a) Plus](https://github.com/spike0en/nothing_archive/releases?q=pacmanpro&expanded=true) respectively. It is to be noted that the releases are compatible with all regional variants of the device.
+- Downloads are tagged with `INCREMENTAL_DATE` and `NothingOS version` for [Phone (2a)](https://github.com/spike0en/nothing_archive/releases?q=pacman&expanded=true) & [Phone (2a) Plus](https://github.com/spike0en/nothing_archive/releases?q=pacmanpro&expanded=true) respectively. It is to be noted that the releases are compatible with all regional variants of the device.
 - Codenames: 2a > `Pacman` | 2a Plus > `PacmanPro`
 
 ---
