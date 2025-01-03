@@ -6,8 +6,8 @@
 
 ## Downloads
 
-- Releases are tagged and named with the format: `NothingOS Version` _ `Device_Codename` _ `Incremental_Date` and `POST_OTA_VERSION` _ `NothingOS Version` for [Phone (2a)](https://github.com/spike0en/nothing_archive/releases?q=pacman&expanded=true) and [Phone (2a) Plus](https://github.com/spike0en/nothing_archive/releases?q=pacmanpro&expanded=true) respectively.
-- For releases with NOS build X.Y-A, they are renamed to X.Y.0-A to ensure proper sorting. Developer preview releases are tagged with `0.0.0-DP-`_`Device_Codename`_`Incremental_Date`.
+- Releases are tagged and named with the format: `NothingOS Version` - `Device_Codename` _ `Incremental_Date` and `POST_OTA_VERSION` _ `NothingOS Version` for [Phone (2a)](https://github.com/spike0en/nothing_archive/releases?q=pacman&expanded=true) and [Phone (2a) Plus](https://github.com/spike0en/nothing_archive/releases?q=pacmanpro&expanded=true) respectively.
+- For releases with NOS build X.Y-A, they are renamed to X.Y.0-A to ensure proper sorting. Developer preview releases are tagged with `0.0.0-DP` - `Device_Codename`_`Incremental_Date`.
 - It is important to note that the releases published here are compatible with all regional and color variants of the device, unless specifically stated otherwise in the release notes.
 - Codenames: 2a > `Pacman` | 2a Plus > `PacmanPro`
 
