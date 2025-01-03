@@ -6,7 +6,9 @@
 
 ## Downloads
 
-- Downloads are tagged with `INCREMENTAL_DATE` and `NothingOS version` [here](https://github.com/spike0en/nothing_archive/releases?q=spacewar&expanded=true). It is to be noted that the releases are compatible with all regional variants of the device.
+- Releases are tagged and named using the format: `NothingOS Version` - `Device_Codename` _ `Incremental_Date` and `POST_OTA_VERSION` _ `NothingOS Version`, as shown [here](https://github.com/spike0en/nothing_archive/releases?q=spacewar&expanded=true) respectively.
+- For releases with NOS build X.Y-A, they are renamed to X.Y.0-A to ensure proper sorting. Developer preview releases are tagged with `0.0.0-DP` - `Device_Codename` _ `Incremental_Date`.
+- It is to be noted that the releases are compatible with all regional variants of the device.
 
 ---
 
