@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       urls:
-        description: 'URLs'
+        description: 'URLs (comma or space separated)'
         required: true
       name:
-        description: 'Name'
+        description: 'Name for release (title and tag)'
         required: true
 
 jobs:
@@ -19,22 +19,22 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v4
 
-    - name: Setup
+    - name: Setup environment
       run: |
         sudo apt update
         sudo apt -y install aria2 zstd p7zip-full parallel openssl xxhash
-
-    - name: Install gdown
-      run: |
         python3 -m pip install gdown
 
     - name: Set script permissions
-      run: |
-        chmod +x dump.sh
+      run: chmod +x dump.sh
 
-    - name: Dump
+    - name: Download & Process OTA Packages
       id: dump
-      run: echo ${{ inputs.urls }} | xargs ./dump.sh
+      run: |
+        IFS=',' read -ra URLS <<< "${{ inputs.urls }}"
+        for url in "${URLS[@]}"; do
+          echo "$url"
+        done | xargs ./dump.sh
 
     - name: Upload release assets
       uses: ncipollo/release-action@v1
