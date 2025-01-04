@@ -1,21 +1,26 @@
 #!/bin/bash
 # Script has been modified by Spike for additional functionality and clarity, originally by arter97 and luk1337.
 
+# Print every command and exit immediately on failure
+set -ex 
+
 # Set execute permissions for ota_extractor
 chmod +x ./bin/ota_extractor
 
-# Download base ota package with aria2c or gdown based on link format while renaming it to ota.zip
+# Download OTA firmware with aria2c or gdown based on the link format, renaming it to ota.zip
 download_with_gdown() {
-    gdown --fuzzy "$url" -O ota.zip
+    echo "Downloading with gdown: $1"
+    gdown --fuzzy "$1" -O ota.zip
 }
 
 download_with_aria2c() {
+    echo "Downloading with aria2c: $1"
     aria2c -x5 "$1" -o ota.zip
 }
 
 download_file() {
     local url="$1"
-
+    echo "Processing URL: $url"
     if [[ "$url" == *"drive.google.com"* ]]; then
         download_with_gdown "$url"
     else
@@ -23,78 +28,90 @@ download_file() {
     fi
 }
 
-# Call download_file function with the provided URL
+# Exit if no URL is provided
+if [ -z "$1" ]; then
+    echo "No URL provided."
+    exit 1
+fi
+
+# Download the main OTA firmware
 download_file "$1"
 
-# Continue with unzipping and extracting the payload
-unzip ota.zip payload.bin
+# Extract and process payload
+unzip ota.zip payload.bin || { echo "Failed to unzip payload"; exit 1; }
 mv payload.bin payload_working.bin
-TAG="`unzip -p ota.zip payload_properties.txt | grep ^POST_OTA_VERSION= | cut -b 18-`"
+TAG=$(unzip -p ota.zip payload_properties.txt | grep ^POST_OTA_VERSION= | cut -b 18-)
 BODY="[$TAG]($1) (full)"
 rm ota.zip
-mkdir ota
+
+# Create `ota` directory 
+mkdir -p ota
 
 # Perform extraction on payload_working.bin
-./bin/ota_extractor -output_dir ota -payload payload_working.bin
+./bin/ota_extractor -output_dir ota -payload payload_working.bin || { echo "Failed to extract payload"; exit 1; }
+rm payload_working.bin
 
-# Apply incrementals
+# Apply incrementals when available
 for i in "${@:2}"; do
     download_file "$i"
-    unzip ota.zip payload.bin
+    unzip ota.zip payload.bin || { echo "Failed to unzip incremental payload"; exit 1; }
     mv payload.bin payload_working.bin
-    TAG="`unzip -p ota.zip payload_properties.txt | grep ^POST_OTA_VERSION= | cut -b 18-`"
+    TAG=$(unzip -p ota.zip payload_properties.txt | grep ^POST_OTA_VERSION= | cut -b 18-)
     BODY="$BODY -> [$TAG]($i)"
     rm ota.zip
 
     mkdir ota_new
-    ./bin/ota_extractor -input-dir ota -output_dir ota_new -payload payload_working.bin
-
+    ./bin/ota_extractor -input-dir ota -output_dir ota_new -payload payload_working.bin || { echo "Failed to extract incremental payload"; exit 1; }
     rm -rf ota
     mv ota_new ota
-
     rm payload_working.bin
 done
 
-# Create necessary folders to be used later (`dyn` for logical images and `syn` for boot partition images)
-mkdir out dyn syn
+# Create required directories
+mkdir -p out dyn syn
 
-# Switch back to `ota` directory
+# Switch to `ota` directory
 cd ota
 
-# Calculate the hashes for all files in the `ota` directory and send them to `out` (tagged with `-hash`)
+# Generate hashes for all files in the `ota` directory and send them to `out` (tagged with `-hash`)
 for h in md5 sha1 sha256 xxh128; do
     if [ "$h" = "xxh128" ]; then
         ls * | parallel xxh128sum | sort -k2 -V > ../out/${TAG}-hash.$h
     else
-        ls * | parallel "openssl dgst -${h} -r" | sort -k2 -V > ../out/${TAG}-hash.${h}
+        ls * | parallel "openssl dgst -${h} -r" | sort -k2 -V > ../out/${TAG}-hash.$h
     fi
 done
 
-# Move specific boot partition image files from `ota` to `syn` directory
+# Move the `boot` category image files from `ota` to `syn` directory
 for f in boot dtbo vendor_boot vbmeta; do
     mv ${f}.img ../syn
 done
 
-# Switch to `ota` directory and move specific logical partition image files from `ota` to `dyn` directory
-cd ../ota
+# Move the `logical` category image files from `ota` to `syn` directory
 for f in system system_ext product vendor odm vbmeta_system; do
-    mv ${f}.img ../dyn
+    mv ${f}.img ../dyn 
 done
 
-# Switch to `syn` directory and create a 7z archive for boot partition images tagged with "-boot"
+# Switch to `syn` directory and create a 7z archive for `boot` categorty image files tagged with "-boot"
 cd ../syn
-7z a -mmt4 -mx6 ../out/${TAG}-image-boot.7z *
+7z a -mmt4 -mx6 ../out/${TAG}-image-boot.7z * 
+
+# Delete `syn` directory
 rm -rf ../syn
 
-# Switch to `ota` directory and create a 7z archive for firmware images tagged with "-firmware"
+# Switch to `ota` directory and create a 7z archive for `firmware` category image files tagged with "-firmware"
 cd ../ota
 7z a -mmt4 -mx6 ../out/${TAG}-image-firmware.7z *
+
+# Delete `ota` directory
 rm -rf ../ota
 
-# Switch to `dyn` directory and create a split 7z archive for logical images tagged with "-logical"
+# Switch to `dyn` directory and create a split 7z archive for `logical` category image files tagged with "-logical"
 cd ../dyn
 7z a -mmt4 -mx6 -v1g ../out/${TAG}-image-logical.7z *
 wait
+
+# Delete `dyn` directory
 rm -rf ../dyn
 
 # Echo tag name, release body, and release history
