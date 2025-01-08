@@ -76,7 +76,7 @@ Sincere thanks are extended to the following contributors for their invaluable s
 
 - **[luk1337](https://github.com/luk1337/oplus_archive)**: For pioneering the use of AOSP's OTA extraction tool, which enabled the extraction of incremental OTA updates.
 - **[arter97](https://github.com/arter97/nothing_archive)**: For adapting the same for Nothing Phone (2).
-- **[Reindex](https://github.com/reindex-ot)**: For providing the Japanese translation, helping make the repository accessible to a wider audience.
+- **[Re*Index.(ot_inc)](https://github.com/reindex-ot)**: For providing the Japanese translation, helping make the repository accessible to a wider audience.
 
 ---
 
