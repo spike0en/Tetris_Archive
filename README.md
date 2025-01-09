@@ -17,7 +17,7 @@ A **complete collection of full, unaltered stock OTA images** and OTA update lin
 - [Repository Statistics](#-table-of-contents)
 - [Supported Models](#-supported-models)
 - [Use Cases](#-use-cases)
-- [Acknowledgments](#-acknowledgements)
+- [Acknowledgments](#-acknowledgments)
 - [Support the Project](#-support-the-project)
 
 ---
