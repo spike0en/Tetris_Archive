@@ -34,7 +34,15 @@ A **complete collection of full, unaltered stock OTA images** and OTA update lin
 
 ## 📱 Supported Models
 
-Use the dropdown list for each device model to find its corresponding index:
+Use the dropdown list for each device model to find its corresponding index. Please note:
+
+- **Compatibility**: The releases and OTA links are compatible for manual sideloading or flashing with all regional variants (GLO/EEA/IND/JPN) and color versions of the models, unless otherwise specified in the notes present the category.
+- **Official Links**: All provided links are unmodified and sourced directly from the official OTA servers.
+- **Archived Builds**: For some builds where incremental or full OTA files lack active official server links or have expired, they have been [archived](https://archive.org) for convenience.
+- **Authenticity**: All releases are provided in their original, unmodified form as supplied by the OEM.
+- **Exclusion**: Android Developer Preview releases and some older region-specific releases have been excluded for the time being.
+
+---
 
 <details>
   <summary>Nothing Phone (1) - Spacewar</summary>
