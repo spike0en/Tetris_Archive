@@ -1,46 +1,46 @@
-# 🚀 Nothing Devices OTA Archive
+# 🚀 Archivio OTA Dispositivi Nothing
 
 ---
 
-## **🌍 Language Options**
-- [English](#) | [日本語](/README_ja-JP.md) | [Italiano](/README_it-IT.md)
+## **🌍 Altre Lingue**
+- [English](/README.md) | [日本語](/README_ja-JP.md) | [Italiano](#)
 
 ---
 
-## 📂 Project Overview
+## 📂 Panoramica Progetto
 
-A **complete collection of full, unaltered stock OTA images** and OTA update links for [Nothing](https://nothing.tech/) and [CMF by Nothing](https://cmf.tech) devices. This archive aids users in flashing official firmware, securely rooting devices, and storing stock firmware for various use cases. The OTA links are directly sourced from official update servers.
-
----
-
-## 📑 Table of Contents
-- [Repository Statistics](#-table-of-contents)
-- [Supported Models](#-supported-models)
-- [Use Cases](#-use-cases)
-- [Acknowledgments](#-acknowledgments)
-- [Support the Project](#-support-the-project)
+Una **Collezione completa di immagini OTA stock, incrementali e complete** e link di aggiornamento OTA per dispositivi [Nothing](https://nothing.tech/) e [CMF by Nothing](https://cmf.tech). Questo archivio punta ad aiutare gli utenti nel flash di firmware ufficiali, eseguire il root in maniera sicura del proprio dispositivo e ripristinare il firmware stock in caso di necessità. I link OTA sono ottenuti direttamente dai server di aggiornamento ufficiali.
 
 ---
 
-## 📊 Repository Statistics  
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%23754400&title_bg=%235F5F5F&icon=awesomelists.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)
-![GitHub last commit](https://img.shields.io/github/last-commit/spike0en/nothing_archive)
-![GitHub repo size](https://img.shields.io/github/repo-size/spike0en/nothing_archive)
-![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive)
-![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?label=Forks&logo=github)
+## 📑 Tabella dei Contenuti
+- [Statistiche Repository](#-statistiche-repository)
+- [Modelli Supportati](#-modelli-supportati)
+- [Casi d'Uso](#-casi-duso)
+- [Ringraziamenti](#-ringraziamenti)
+- [Supporta il Progetto](#-supporta-il-progetto)
 
 ---
 
-## 📱 Supported Models
+## 📊 Statistiche Repository 
 
-Use the dropdown list for each device model to find its corresponding index. Please note:
+[![Visitatori](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%23754400&title_bg=%235F5F5F&icon=awesomelists.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)
+![Ultimo commit GitHub](https://img.shields.io/github/last-commit/spike0en/nothing_archive)
+![Dimensione Repo GitHub](https://img.shields.io/github/repo-size/spike0en/nothing_archive)
+![Stelle](https://img.shields.io/github/stars/spike0en/nothing_archive)
+![Fork](https://img.shields.io/github/forks/spike0en/nothing_archive?label=Forks&logo=github)
 
-- **Compatibility**: The releases and OTA links are compatible for manual sideloading or flashing with all regional variants (GLO/EEA/IND/JPN) and color versions of the models, unless otherwise specified in the notes present the category.
-- **Official Links**: All provided links are unmodified and sourced directly from the official OTA servers.
-- **Archived Builds**: For some builds where incremental or full OTA files lack active official server links or have expired, they have been [archived](https://archive.org) for convenience.
-- **Authenticity**: All releases are provided in their original, unmodified form as supplied by the OEM.
-- **Exclusion**: Android Developer Preview releases and some older region-specific releases have been excluded for the time being.
+---
+
+## 📱 Modelli Supportati
+
+Usa la lista dropdown per ciascun modello per trovarne la tabella corrispondente. Ricorda:
+
+- **Compatibilità**: I rilasci e i link OTA sono compatibili con l'installazione manuale o il flash con tutte le varianti regionali (GLO/EEA/IND/JPN) e di colore dei modelli, a meno di notifica nelle note di ciascuna categoria.
+- **Link Ufficiali**: Tutti i link qua presenti sono stati ottenuti direttamente dai server OTA ufficiali.
+- **Build Archiviate**: Alcune build dove gli OTA incrementali o completi non sono dotati di link ufficiali perché decaduti, si può fare riferimento agli archivi presenti [qui](https://archive.org).
+- **Autenticità**: Tutti i rilasci sono condivisi senza modifiche apportate, ovvero nello stato originale rilasciato dall'OEM.
+- **Esclusioni**: Le release Android Developer Preview e alcune release di regioni specifiche sono state al momento escluse.
 
 ---
 
@@ -49,7 +49,7 @@ Use the dropdown list for each device model to find its corresponding index. Ple
 
 <br>
 
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/spacewar).
+**Istruzioni**: Per istruzioni d'installazione dettagliate, visitare [questo sito](https://github.com/spike0en/nothing_archive/tree/spacewar).
 
 <br>
 
@@ -82,7 +82,7 @@ Use the dropdown list for each device model to find its corresponding index. Ple
   
 <br>
 
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/pong).
+**Istruzioni**: Per istruzioni d'installazione dettagliate, visitare [questo sito](https://github.com/spike0en/nothing_archive/tree/pong).
 
 <br>
 
@@ -118,8 +118,8 @@ Use the dropdown list for each device model to find its corresponding index. Ple
   
 <br>
 
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/pacman).
-**Note**: Versions 2.5.3 to 2.5.5A are compatible only with the Milk, White, and Black variants of the device. Versions 2.5.6 and higher support all color variants, including Blue and the Special Edition.
+**Istruzioni**: Per istruzioni d'installazione dettagliate, visitare [questo sito](https://github.com/spike0en/nothing_archive/tree/pacman).
+**Note**: Le versioni da 2.5.3 a 2.5.5A sono compatibili solamente con le colorazioni Latte, Bianco e Nero del dispositivo. Dalla versione 2.5.6 viene aggiunto il supporto per tutte le altre colorazioni (Blu e quelle Speciali).
 
 <br>
 
@@ -147,7 +147,7 @@ Use the dropdown list for each device model to find its corresponding index. Ple
   
 <br>
 
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/pacman).
+**Istruzioni**: Per istruzioni d'installazione dettagliate, visitare [questo sito](https://github.com/spike0en/nothing_archive/tree/pacman).
 
 <br>
 
@@ -168,7 +168,7 @@ Use the dropdown list for each device model to find its corresponding index. Ple
   
 <br>
 
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/tetris).
+**Istruzioni**: Per istruzioni d'installazione dettagliate, visitare [questo sito](https://github.com/spike0en/nothing_archive/tree/tetris).
 
 <br>
 
@@ -189,31 +189,31 @@ Use the dropdown list for each device model to find its corresponding index. Ple
 
 ---
 
-## 📌 Use Cases  
+## 📌 Casi d'Uso  
 
-This archive is a reliable solution for a variety of scenarios involving **Nothing** and **CMF** devices:
+Questo archivio è una soluzione affidabile per diversi scenari con dispositivi **Nothing** e **CMF**:
 
-- **Manual OTA Updates:** Sideload OTA updates for devices when region-based rollouts are delayed or when the device is not receiving the OTA for various reasons.
-- **Rooting Support:** Access stock boot images for rooting and safely unrooting your device.
-- **Restore or Flash Firmware:** Revert to stock firmware after custom ROM installations or prepare your device for custom ROMs.
-- **Firmware Archiving:** Archive and preserve the oem firmware versions for future use or testing purposes.
-
----
-
-## 🤝 Acknowledgments
-
-Sincere thanks are extended to the following contributors for their invaluable support and contributions:
-
-- **[luk1337](https://github.com/luk1337/oplus_archive)**: For pioneering the use of AOSP's OTA extraction tool, which enabled the extraction of incremental OTA updates.
-- **[arter97](https://github.com/arter97/nothing_archive)**: For adapting the same for Nothing Phone (2).
-- **[LukeSkyD](https://github.com/LukeSkyD)**: For providing the Italian translation and  maintaining his [Nothing Phone (1) - Repo](https://xdaforums.com/t/nothing-phone-1-repo-nos-ota-img-guide-root.4464039/), which served as a reference for earlier build versions of the device while maintaining this archive.
-- **[Re*Index.(ot_inc)](https://github.com/reindex-ot)**: For providing the Japanese translation, helping make the repository accessible to a wider audience.
+- **Aggiornamenti OTA Manuali:** Sideload aggiornamenti OTA quando i rollout basati su zone geografiche vengono posticipati oppure il dispositivo non sta ricevendo aggiornamenti per diversi motivi.
+- **Supporto Root:** Accesso alle immagini stock di boot per eseguire il root o l'unroot del dispositivo.
+- **Ripristino o Flash Firmware:** Ripristina il firmware stock dopo una l'installazione di una custom ROM o in preparazione all'installazione di una CROM.
+- **Archivio Firmware:** Archivia e preserva i firmware oem per usi futuri o per test.
 
 ---
 
-## ⭐ Support the Project!  
+## 🤝 Ringraziamenti
 
-If you’ve found this archive helpful, please consider [starring the repository](https://github.com/spike0en/nothing_archive/stargazers) to boost its visibility and help others discover it. Your support means a lot—thank you!
+Ringraziamenti sinceri ai seguenti collaboratori per il loro supporto e lavoro:
+
+- **[luk1337](https://github.com/luk1337/oplus_archive)**: Per essere stato il primo ad usare il tool di estrazione OTA di AOSP, che ha permesso l'estrazione degli aggiornamenti OTA incrementali.
+- **[arter97](https://github.com/arter97/nothing_archive)**: Per aver adattato il tool al Nothing Phone (2).
+- **[LukeSkyD](https://github.com/LukeSkyD)**: Per aver mantenuta la sua [Repo Nothing Phone (1)](https://xdaforums.com/t/nothing-phone-1-repo-nos-ota-img-guide-root.4464039/), che è servita come riferimento per versioni di build precedenti per il dispositivo, usate da questo archivio e per la traduzione italiana di questo archivio.
+- **[Re*Index.(ot_inc)](https://github.com/reindex-ot)**: Per aver rilasciato la traduzione giapponese di questo archivio per espanderne la user base.
+
+---
+
+## ⭐ Supporta il Progetto!  
+
+Se hai trovato questo archivio d'aiuto, considera [mettere una stella](https://github.com/spike0en/nothing_archive/stargazers) per migliorare la visibilità della repo e aiutare altri a trovarla. Il tuo supporto ci può essere molto d'aiuto! Grazie!
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=spike0en/nothing_archive&type=Date&theme=dark" />
