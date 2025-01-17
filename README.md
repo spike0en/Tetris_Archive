@@ -25,11 +25,18 @@ A **complete collection of full, unaltered stock OTA images** and OTA update lin
 
 ## 📊 Repository Statistics  
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%23754400&title_bg=%235F5F5F&icon=awesomelists.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)
-![GitHub last commit](https://img.shields.io/github/last-commit/spike0en/nothing_archive)
-![GitHub repo size](https://img.shields.io/github/repo-size/spike0en/nothing_archive)
-![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive)
-![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?label=Forks&logo=github)
+[![Visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%23754400&title_bg=%235F5F5F&icon=github.svg&icon_color=%23E7E7E7&title=Visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)
+
+![Releases](https://badgen.net/github/releases/spike0en/nothing_archive?label=Total%20Releases)
+![Total Downloads](https://img.shields.io/github/downloads/spike0en/nothing_archive/total?logo=github&logoColor=white&label=Total%20Downloads)
+![Latest Release](https://img.shields.io/github/release/spike0en/nothing_archive?label=Latest%20Release&logo=git&logoColor=white)
+
+![Watchers](https://badgen.net/github/watchers/spike0en/nothing_archive?icon=github&label=Watchers)
+![Contributors](https://img.shields.io/github/contributors/spike0en/nothing_archive?logo=github&logoColor=white&label=Contributors)
+![Repo Size](https://img.shields.io/github/repo-size/spike0en/nothing_archive?logo=github&logoColor=white&label=Repo%20Size)
+![Last Commit](https://img.shields.io/github/last-commit/spike0en/nothing_archive?logo=github&logoColor=white&label=Last%20Commit)
+![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive?logo=github)
+![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?logo=github)
 
 ---
 
