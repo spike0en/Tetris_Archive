@@ -15,8 +15,9 @@ A **complete collection of full, unaltered stock OTA images** and OTA update lin
 
 ## 📑 Table of Contents
 - [Repository Statistics](#-table-of-contents)
-- [Supported Models](#-supported-models)
+- [Disclaimer](#️-disclaimer)
 - [Use Cases](#-use-cases)
+- [OTA Sideloading Guide & Supported Models](#-supported-models)
 - [Acknowledgments](#-acknowledgments)
 - [Support the Project](#-support-the-project)
 
@@ -32,17 +33,30 @@ A **complete collection of full, unaltered stock OTA images** and OTA update lin
 
 ---
 
-## 📱 Supported Models
-
-Use the dropdown list for each device model to find its corresponding index. Please note:
+## ⚠️ Disclaimer
 
 - **Compatibility**: The releases and OTA links are compatible for manual sideloading or flashing with all regional variants (GLO/EEA/IND/JPN) and color versions of the models, unless otherwise specified in the notes present the category.
 - **Official Links**: All provided links are unmodified and sourced directly from the official OTA servers.
 - **Archived Builds**: For some builds where incremental or full OTA files lack active official server links or have expired, they have been [archived](https://archive.org/details/nothing-archive) for convenience.
 - **Authenticity**: All releases are provided in their original, unmodified form as supplied by the OEM.
-- **Exclusion**: Android Developer Preview releases and some older region-specific releases have been excluded for the time being.
+- **Exclusion**: Android Developer Preview releases and some older region-specific releases have been excluded from the time being.
 
 ---
+
+## 📌 Use Cases  
+
+This archive is a reliable solution for a variety of scenarios involving **Nothing** and **CMF** devices:
+
+- **Manual OTA Updates:** Sideload OTA updates for devices when region-based rollouts are delayed or when the device is not receiving the OTA for various reasons.
+- **Rooting Support:** Access stock boot images for rooting and safely unrooting your device.
+- **Restore or Flash Firmware:** Revert to stock firmware after custom ROM installations or prepare your device for custom ROMs.
+- **Firmware Archiving:** Archive and preserve the oem firmware versions for future use or testing purposes.
+
+---
+
+## 📱 Supported Models
+
+Use the dropdown list for each device model to find its corresponding index. Please go through this [OTA Sideloading Guide](https://telegra.ph/OTA-Sideloading-Guide-for-Nothing-Devices-01-17) before proceeding with the same.
 
 <details>
   <summary>Nothing Phone (1) - Spacewar</summary>
@@ -188,17 +202,6 @@ Use the dropdown list for each device model to find its corresponding index. Ple
 | 2.6 | Tetris-U2.6-240702-2200 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/tetris/Tetris_U2.6-240702-2200_2.6.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.6.0-tetris.240702) |
 
 </details>
-
----
-
-## 📌 Use Cases  
-
-This archive is a reliable solution for a variety of scenarios involving **Nothing** and **CMF** devices:
-
-- **Manual OTA Updates:** Sideload OTA updates for devices when region-based rollouts are delayed or when the device is not receiving the OTA for various reasons.
-- **Rooting Support:** Access stock boot images for rooting and safely unrooting your device.
-- **Restore or Flash Firmware:** Revert to stock firmware after custom ROM installations or prepare your device for custom ROMs.
-- **Firmware Archiving:** Archive and preserve the oem firmware versions for future use or testing purposes.
 
 ---
 
