@@ -140,7 +140,8 @@ Usa la lista dropdown per ciascun modello per trovarne la tabella corrispondente
 | 2.5.5 | Pacman-U2.5-240410-1238 | Pacman_U2.5-240322-1016 -> [Pacman_U2.5-240410-1238](https://android.googleapis.com/packages/ota-api/package/cba47167162f5940362699d12bc16d4ef3f5beef.zip) | N/A | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.5.5-pacman.240410) |
 | 2.5.4A | Pacman-U2.5-240322-1016 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/pacman/Pacman_U2.5-240322-1016_2.5.4A.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.5.4-A-pacman.240322) |
 | 2.5.4 | Pacman-U2.5-240315-0035 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/pacman/Pacman_U2.5-240315-0035_2.5.4.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.5.4-pacman.240315) |
-| 2.5.3| Pacman-U2.5-240301-2206 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/pacman/Pacman_U2.5-240301-2206_2.5.3.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.5.3-pacman.240301) |
+| 2.5.3 | Pacman-U2.5-240301-2206 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/pacman/Pacman_U2.5-240301-2206_2.5.3.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.5.3-pacman.240301) |
+| 2.5 | Pacman-U2.5-231207-0042 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/pacman/Pacman_U2.5-231207-0042_2.5.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.5.0-pacman.231207) |
 
 </details>
 
