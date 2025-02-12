@@ -1,38 +1,26 @@
-# 🚀 Nothing Devices OTA Archive
+[English](./README.md) | **日本語**
 
----
+# Nothing and CMF Firmware Archive 📦
 
-## **🌍 言語のオプション**
-- [English](./README.md) | [日本語](#) | [Italiano](/README_it-IT.md)
-
----
-
-## 📂 プロジェクトについて
+[![Visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%2300A6A6&title_bg=%234A4A4A&icon=github.svg&icon_color=%23FFFFFF&title=Visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)
+[![Workflow Status](https://img.shields.io/github/actions/workflow/status/spike0en/nothing_archive/dump.yml?branch=main&label=Build&color=2DC653&logo=github)](https://github.com/spike0en/nothing_archive/actions/workflows/dump.yml)
+[![Total Downloads](https://img.shields.io/github/downloads/spike0en/nothing_archive/total?logo=github&logoColor=white&label=Total%20Downloads&color=007377)](#サポートしているモデル-)
+[![Latest Release](https://img.shields.io/github/release/spike0en/nothing_archive?label=Latest%20Release&logo=git&logoColor=white&color=1E6091)](https://github.com/spike0en/nothing_archive/releases/latest)
+[![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive?logo=github&color=D4AF37)](#プロジェクトをサポート-)
+[![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?logo=github&color=468FAF)](https://github.com/spike0en/nothing_archive/fork)
 
 [Nothing](https://nothing.tech/) および [CMF by Nothing](https://cmf.tech) デバイス用の **完全で変更がされていない Stock ROM** のコレクションと OTA アップデートのリンク集です。このアーカイブはユーザーが公式ファームウェアを Flash、デバイスを安全に root 化したり、さまざまなユースケースで Stock ROM を保存に役立ちます。OTA リンクは、公式のアップデートサーバーから直接取得されます。
 
----
+## ユースケース 💡  
 
-## 📑 目次
-- [リポジトリの統計](#-リポジトリの統計)
-- [サポートしているモデル](#-サポートしているモデル)
-- [ユースケース](#-ユースケース)
-- [謝辞](#-謝辞)
-- [プロジェクトをサポート](#-プロジェクトをサポート)
+このアーカイブは、**Nothing** および **CMF** のデバイスに関係するさまざまなシナリオに対応する信頼性が高いソリューションです:
 
----
+- **手動の OTA アップデート:** 地域でのロールアウトが遅れている場合や、さまざまな理由でデバイスが OTA を受け取ることができない場合にデバイスの OTA をサイドロードできます。
+- **root 化のサポート:** デバイスを安全に root 化または、非 root 化を行うための Stock boot イメージにアクセスできます。
+- **ファームウェアの復元や Flash:** カスタム ROM のインストール後に Stock ROM に戻したり、デバイスをカスタム ROM 用にする準備ができます。
+- **ファームウェアのアーカイブ:** 将来的な使用、テストの目的で OEM ファームウェアバージョンをアーカイブとして残すことができます。
 
-## 📊 リポジトリの統計  
-
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%23754400&title_bg=%235F5F5F&icon=awesomelists.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)
-![GitHub last commit](https://img.shields.io/github/last-commit/spike0en/nothing_archive)
-![GitHub repo size](https://img.shields.io/github/repo-size/spike0en/nothing_archive)
-![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive)
-![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?label=Forks&logo=github)
-
----
-
-## 📱 サポートしているモデル
+## サポートしているモデル 📱
 
 #### ROM に関する説明と注意事項
 - **互換性**: リリースと OTA リンクは、カテゴリーの注記に指定が特にない限りは、すべてのリージョン別のバリアント (グローバル: **表記なし**/ヨーロッパ: **EEA**/インド: **IND**/日本: **JPN**) およびカラーバージョンのモデルと手動によるサイドローディングまたは Flash に互換性があります。
@@ -193,20 +181,7 @@
 
 </details>
 
----
-
-## 📌 ユースケース  
-
-このアーカイブは、**Nothing** および **CMF** のデバイスに関係するさまざまなシナリオに対応する信頼性が高いソリューションです:
-
-- **手動の OTA アップデート:** 地域でのロールアウトが遅れている場合や、さまざまな理由でデバイスが OTA を受け取ることができない場合にデバイスの OTA をサイドロードできます。
-- **root 化のサポート:** デバイスを安全に root 化または、非 root 化を行うための Stock boot イメージにアクセスできます。
-- **ファームウェアの復元や Flash:** カスタム ROM のインストール後に Stock ROM に戻したり、デバイスをカスタム ROM 用にする準備ができます。
-- **ファームウェアのアーカイブ:** 将来的な使用、テストの目的で OEM ファームウェアバージョンをアーカイブとして残すことができます。
-
----
-
-## 🤝 謝辞
+## 謝辞 🤝
 
 多大なるサポートと貢献をした以下の方々に心から感謝を申し上げます:
 
@@ -215,9 +190,7 @@
 - **[LukeSkyD](https://github.com/LukeSkyD)**: イタリア語訳の提供と [Nothing Phone (1) - Repo](https://xdaforums.com/t/nothing-phone-1-repo-nos-ota-img-guide-root.4464039/) のメンテナンスを行ってくれました。このアーカイブを管理している間、デバイスの以前のビルドバージョンのリファレンスにも貢献してくれました。
 - **[Re*Index.(ot_inc)](https://github.com/reindex-ot)**: 日本語訳の提供、リポジトリを幅広いユーザーにアクセスできるようにサポートをしました。
 
----
-
-## ⭐ プロジェクトをサポート!  
+## プロジェクトをサポート ⭐  
 
 このアーカイブがお役に立てたのであれば、[リポジトリに Star を付ける](https://github.com/spike0en/nothing_archive/stargazers)ことで、リポジトリの可視性の向上と他のユーザーがこのリポジトリを見つけやすくなります。あなたのサポートは大きな意味をもたらします。ご協力お願いします! 
 
