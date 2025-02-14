@@ -13,7 +13,7 @@
 [![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?logo=github&color=468FAF)](https://github.com/spike0en/nothing_archive/fork)
 
 ## このアーカイブについて 📢 
-このアーカイブは、[Nothing](https://nothing.tech/) および [CMF by Nothing](https://cmf.tech/) デバイス用の変更がされていない Stock OTA イメージ、アップデートリンク、および完全なファームウェアパッケージの最新版のコレクションを提供します。**ファームウェアファイルは公式サーバーから**直接インデックス化され、手動での Flash、サイドローディング、および長期の保存用に[アーカイブ](https://archive.org/details/nothing-archive)されます。Stock OTA イメージは AOSP の OTA 抽出ツールを使用して生成しています。
+このアーカイブは、[Nothing](https://nothing.tech/) および [CMF by Nothing](https://cmf.tech/) デバイス用の変更がされていない Stock OTA イメージ、アップデートリンク、および完全なファームウェアパッケージの最新版のコレクションを提供します。**ファームウェアファイルは公式サーバーから** 直接インデックス化され、手動での Flash、サイドローディング、および長期の保存用に[アーカイブ](https://archive.org/details/nothing-archive)されます。Stock OTA イメージは AOSP の OTA 抽出ツールを使用して生成しています。
 
 ## 機能とベネフィット 🚀    
 
@@ -23,24 +23,16 @@
 - **Stock OTA イメージ:** OEM から完全なストックファームウェアを入手できない場合に、変更が一切されていない Stock OTA イメージを生成します。
 - **root 化のサポート:** サポートされているデバイスで、使用可能な root 化、または root 化の解除をするために必要な Stock イメージファイルを提供します。
 - **ファームウェアの Flash と アンブリック:** ブートループ、ソフトブリックの解決、カスタム ROM からのリストアをするために公式ファームウェアまたは、パーティションイメージを Flash できます。
-## サポートしているモデル 📱
 
-#### ROM に関する説明と注意事項
-- **互換性**: リリースと OTA リンクは、カテゴリーの注記に指定が特にない限りは、すべてのリージョン別のバリアント (グローバル: **表記なし**/ヨーロッパ: **EEA**/インド: **IND**/日本: **JPN**) およびカラーバージョンのモデルと手動によるサイドローディングまたは Flash に互換性があります。
-- **公式リンク**: 提供されるリンクはすべて変更されていないため、公式 OTA サーバーから直接取得されます。
-- **アーカイブ済みのビルド**: Incremental または Full OTA ファイルの有効な公式サーバーリンクがない、期限切れのビルドは便宜上[アーカイブ](https://archive.org/details/nothing-archive)されています。
-- **信頼性**: すべてのリリースは、OEM によって提供された変更のされていない元々の形式で提供されます。
-- **除外**: Android Developer Preview のリリースと一部の古いリージョン固有のリリースは、除外しています。
+## ダウンロード 📥 
+**リリースのインデックス** にアクセスするには、以下のドロップダウンリストから **デバイスのモデル** を選択してください:
 
----
-
-各デバイスのドロップダウンリストから対応するモデルを選択してください:
 <details>
   <summary>Nothing Phone (1) - Spacewar</summary>
 
 <br>
 
-**手順**: 詳細なインストールの手順については、[こちら](https://github.com/spike0en/nothing_archive/tree/spacewar)をご確認ください。
+**手順**: より詳細な手順は[こちら](https://github.com/spike0en/nothing_archive/tree/spacewar)をご確認ください。
 
 <br>
 
@@ -68,13 +60,12 @@
 
 </details>
 
-
 <details>
   <summary>Nothing Phone (2) - Pong</summary>
   
 <br>
 
-**手順**: 詳細なインストールの手順については、[こちら](https://github.com/spike0en/nothing_archive/tree/pong)をご確認ください。
+**手順**: より詳細な手順は[こちら](https://github.com/spike0en/nothing_archive/tree/pong)をご確認ください。
 
 <br>
 
@@ -92,7 +83,7 @@
 | 2.5.5 | Pong-U2.5-240410-1247 | Pong_U2.5-240327-2140 -> [Pong_U2.5-240410-1247](https://android.googleapis.com/packages/ota-api/package/44a00fa0a6226aa51f54ee5e5418e0935275d542.zip) | [こちら](https://archive.org/download/nothing-archive/full_ota/pong/Pong_U2.5-240410-1247_2.5.5.zip) | [こちら](https://github.com/spike0en/nothing_archive/releases/tag/2.5.5-pong.240410) |
 | 2.5.3 | Pong-U2.5-240327-2140 | Pong_U2.5-240116-1446 -> [Pong_U2.5-240327-2140](https://android.googleapis.com/packages/ota-api/package/20eda7e4eafbfe2900393c177a32c352607c2570.zip) | [こちら](https://android.googleapis.com/packages/ota-api/package/dfe935ebb68be6b68d2570b10a96120d27ed05b5.zip) | [こちら](https://github.com/spike0en/nothing_archive/releases/tag/2.5.3-pong.240327) |
 | 2.5.2 | Pong-U2.5-240116-1446 | Pong_U2.5-231228-1342 -> [Pong_U2.5-240116-1446](https://android.googleapis.com/packages/ota-api/package/d77ffb26d8f29e851f6452dcdbc335749b2d60c8.zip) | [こちら](https://archive.org/download/nothing-archive/full_ota/pong/Pong_U2.5-240116-1446_2.5.2.zip) | [こちら](https://github.com/spike0en/nothing_archive/releases/tag/2.5.2-pong.240116) |
-| 2.5.1A | Pong-U2.5-231228-1342 | Pong_U2.5-231208-2206 -> [Pong_U2.5-231228-1342](https://android.googleapis.com/packages/ota-api/package/88f8c09ad5275c83182cc441c1b6806619947832.zip) | [こちら](https://archive.org/download/nothing-archive/full_ota/pong/Pong_U2.5-231228-1342_2.5.1A.zip) | [こちら](https://github.com/spike0en/nothing_archive/releases/tag/2.5.1-A-pong.231228) |
+| 2.5.1A | Pong-U2.5-231228-1342 | Pong_U2.5-231208-2206 -> [Pong_U2.5-231228-1342](https://android.googleapis.com/packages/ota-api/package/88f8c09ad5275c83182cc441c1b6806619947832.zip) | [こちら]((https://archive.org/download/nothing-archive/full_ota/pong/Pong_U2.5-231228-1342_2.5.1A.zip)) | [こちら](https://github.com/spike0en/nothing_archive/releases/tag/2.5.1-A-pong.231228) |
 | 2.5.1 | Pong-U2.5-231208-2206 | Pong_T2.0-231024-2214 -> [Pong_U2.5-231208-2206](https://android.googleapis.com/packages/ota-api/package/f3f0db09cdde9dcd118da68821a445af7b0963cc.zip) | [こちら](https://archive.org/download/nothing-archive/full_ota/pong/Pong_U2.5-231208-2206_2.5.1.zip) | [こちら](https://github.com/spike0en/nothing_archive/releases/tag/2.5.1-pong.231208) |
 | 2.5 OB-2 | Pong-U2.5-231102-1201 | Pong_U2.5-231007-2102 -> [Pong_U2.5-231102-1201](https://archive.org/download/nothing-archive/incremental_ota/pong/Pong_U2.5-231007-2102_Pong_U2.5-231102-1201.zip) | [こちら](https://archive.org/download/nothing-archive/full_ota/pong/Pong_U2.5-231102-1201_2.5_OB-2.zip) | [こちら](https://github.com/spike0en/nothing_archive/releases/tag/2.5.0-pong.231102) |
 | 2.5 OB-1 | Pong-U2.5-231007-2102 | N/A | [こちら](https://archive.org/download/nothing-archive/full_ota/pong/Pong-U2.5-231007-2102_2.5_OB-1.zip) | [こちら](https://github.com/spike0en/nothing_archive/releases/tag/2.5.0-pong.231007) |
@@ -105,15 +96,14 @@
 
 </details>
 
-
 <details>
   <summary>Nothing Phone (2a) - Pacman</summary>
   
 <br>
 
-**手順**: 詳細なインストールの手順については、[こちら](https://github.com/spike0en/nothing_archive/tree/pacman)をご確認ください。
+**手順**: より詳細な手順は[こちら](https://github.com/spike0en/nothing_archive/tree/pacman)をご確認ください。
 
-**注意**: バージョン 2.5.3 から 2.5.5A は**ミルク**、**ホワイト**、**ブラック**のカラーバリエーションのみ互換性があります。バージョン 2.5.6 以降では、**ブルー**と**Special Edition**を含むすべてのカラーバリエーションに対応しています。
+**注意**: バージョン 2.5.3 から 2.5.5A はミルク、ホワイト、ブラックのカラーバリエーションなデバイスのみ互換性があります。バージョン 2.5.6 以降はブルー、Special Edition を含むすべてのカラーバリエーションをサポートしています。
 
 <br>
 
@@ -137,13 +127,12 @@
 
 </details>
 
-
 <details>
   <summary>Nothing Phone (2a) Plus - PacmanPro</summary>
   
 <br>
 
-**手順**: 詳細なインストールの手順については、[こちら](https://github.com/spike0en/nothing_archive/tree/pacman)をご確認ください。
+**手順**: より詳細な手順は[こちら](https://github.com/spike0en/nothing_archive/tree/pacman)をご確認ください。
 
 <br>
 
@@ -158,13 +147,12 @@
 
 </details>
 
-
 <details>
   <summary>CMF Phone (1) - Tetris</summary>
   
 <br>
 
-**手順**: 詳細なインストールの手順については、[こちら](https://github.com/spike0en/nothing_archive/tree/tetris)をご確認ください。
+**手順**: より詳細な手順は[こちら](https://github.com/spike0en/nothing_archive/tree/tetris)をご確認ください。
 
 <br>
 
@@ -184,14 +172,22 @@
 
 </details>
 
+## 免責事項 ⚠️
+
+- **信頼性** – ファームウェアは **OEM サーバーから直接取得** され、変更は一切していません。
+- **手動での Flash** – 別途記載がない限り、リリースはデバイスのすべてのリージョンと互換性があります。
+- **アーカイブ済みのビルド** – ビルドがアーカイブ済みであれば、公式サーバーからの利用ができなくなったとしてもここで利用ができます。
+- **自己責任で使用する** – プロジェクトは、OS の問題やバグについての **責任を一切負いません。** ファームウェアは **一切変更されておらず**、その信頼性については OEM のみが責任を負います。ユーザーは、**指示に注意深く従うこと** や自分の判断で進める必要があります。
+- **オープンソースを尊重する** – このアーカイブのファイルをいかなる形式でも再配布することは **固く禁じます。** コンテンツをミラーするのではなく、プロジェクトのサポートをご検討ください。
+
 ## 謝辞 🤝
 
 多大なるサポートと貢献をした以下の方々に心から感謝を申し上げます:
-
-- **[luk1337](https://github.com/luk1337/oplus_archive)**: Incremental OTA の抽出を可能にした AOSP の OTA 抽出ツールの先駆者です。
-- **[arter97](https://github.com/arter97/nothing_archive)**: アップデートを Nothing Phone (2) に対応させることに貢献をしました。
-- **[LukeSkyD](https://github.com/LukeSkyD)**: イタリア語訳の提供と [Nothing Phone (1) - Repo](https://xdaforums.com/t/nothing-phone-1-repo-nos-ota-img-guide-root.4464039/) のメンテナンスを行ってくれました。このアーカイブを管理している間、デバイスの以前のビルドバージョンのリファレンスにも貢献してくれました。
-- **[Re*Index.(ot_inc)](https://github.com/reindex-ot)**: 日本語訳の提供、リポジトリを幅広いユーザーにアクセスできるようにサポートをしました。
+- **[luk1337](https://github.com/luk1337/oplus_archive)** - Incremental OTA の抽出を可能にした AOSP の OTA 抽出ツールのパイオニアです。
+- **[arter97](https://github.com/arter97/nothing_archive)** - アップデートを Nothing Phone (2) に対応させることに貢献しました。
+- **[LukeSkyD](https://github.com/LukeSkyD)** - 以前のビルドでの重要なリファレンスとして機能した [Nothing Phone (1) リポジトリ](https://xdaforums.com/t/nothing-phone-1-repo-nos-ota-img-guide-root.4464039/) の管理に貢献しました。
+- **[Re*Index.(ot_inc)](https://github.com/reindex-ot)** - 日本語訳の提供、リポジトリを幅広いユーザーにアクセスできるようにサポートしました。
+- **[XelXen](https://github.com/XelXen)** - プロジェクトのブランディングのためにロゴとバナーをデザインしました。
 
 ## プロジェクトをサポート ⭐  
 
