@@ -1,6 +1,8 @@
 **English** | [日本語](/README_ja-JP.md)
 
-# Nothing Archive 📦
+# Nothing Archive 
+
+<img src="assets/logo.png" width="96" alt="Nothing Archive Logo">
 
 [![Visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%2300A6A6&title_bg=%234A4A4A&icon=github.svg&icon_color=%23FFFFFF&title=Visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)
 [![Workflow Status](https://img.shields.io/github/actions/workflow/status/spike0en/nothing_archive/dump.yml?branch=main&label=Build&color=2DC653&logo=github)](https://github.com/spike0en/nothing_archive/actions/workflows/dump.yml)
@@ -185,6 +187,7 @@ Special thanks to these contributors for their invaluable work and support:
 - **[arter97](https://github.com/arter97/nothing_archive)** – Adapted the above project for **Nothing Phone (2)**.
 - **[LukeSkyD](https://github.com/LukeSkyD)** – Maintains the [Nothing Phone (1) Repo](https://xdaforums.com/t/nothing-phone-1-repo-nos-ota-img-guide-root.4464039/), which served as a key reference for earlier builds.
 - **[Re*Index.(ot_inc)](https://github.com/reindex-ot)** – Provided the Japanese translation, helping make the archive more accessible.
+- **[XelXen](https://github.com/XelXen)** - Designed the logo and banner for the project’s branding.
 
 ## Support the Project ⭐ 
 
