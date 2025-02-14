@@ -8,9 +8,9 @@
 [![Workflow Status](https://img.shields.io/github/actions/workflow/status/spike0en/nothing_archive/dump.yml?branch=main&label=Build&color=2DC653&logo=github)](https://github.com/spike0en/nothing_archive/actions/workflows/dump.yml)
 [![Total Downloads](https://img.shields.io/github/downloads/spike0en/nothing_archive/total?logo=github&logoColor=white&label=Total%20Downloads&color=007377)](#downloads-)
 
-[![Latest Release](https://img.shields.io/github/release/spike0en/nothing_archive?label=Latest%20Release&logo=git&logoColor=white&color=1E6091)](https://github.com/spike0en/nothing_archive/releases/latest)
 [![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive?logo=github&color=D4AF37)](#support-the-project-)
 [![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?logo=github&color=468FAF)](https://github.com/spike0en/nothing_archive/fork)
+[![Latest Release](https://img.shields.io/github/release/spike0en/nothing_archive?label=Latest%20Release&logo=git&logoColor=white&color=1E6091)](https://github.com/spike0en/nothing_archive/releases/latest)
 
 ## このアーカイブについて 📢 
 このアーカイブは、[Nothing](https://nothing.tech/) および [CMF by Nothing](https://cmf.tech/) デバイス用の変更がされていない Stock OTA イメージ、アップデートリンク、および完全なファームウェアパッケージの最新版のコレクションを提供します。**ファームウェアファイルは公式サーバーから** 直接インデックス化され、手動での Flash、サイドローディング、および長期の保存用に[アーカイブ](https://archive.org/details/nothing-archive)されます。Stock OTA イメージは AOSP の OTA 抽出ツールを使用して生成しています。
