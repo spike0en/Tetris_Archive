@@ -1,12 +1,15 @@
 [English](./README.md) | **日本語**
 
-# Nothing and CMF Firmware Archive 📦
+# Nothing Archive 
+
+<img src="assets/logo.png" width="96" alt="Nothing Archive Logo">
 
 [![Visitors](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Fnothing_archive&count_bg=%2300A6A6&title_bg=%234A4A4A&icon=github.svg&icon_color=%23FFFFFF&title=Visitors&edge_flat=false)](https://github.com/spike0en/nothing_archive)
 [![Workflow Status](https://img.shields.io/github/actions/workflow/status/spike0en/nothing_archive/dump.yml?branch=main&label=Build&color=2DC653&logo=github)](https://github.com/spike0en/nothing_archive/actions/workflows/dump.yml)
-[![Total Downloads](https://img.shields.io/github/downloads/spike0en/nothing_archive/total?logo=github&logoColor=white&label=Total%20Downloads&color=007377)](#サポートしているモデル-)
+[![Total Downloads](https://img.shields.io/github/downloads/spike0en/nothing_archive/total?logo=github&logoColor=white&label=Total%20Downloads&color=007377)](#downloads-)
+
 [![Latest Release](https://img.shields.io/github/release/spike0en/nothing_archive?label=Latest%20Release&logo=git&logoColor=white&color=1E6091)](https://github.com/spike0en/nothing_archive/releases/latest)
-[![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive?logo=github&color=D4AF37)](#プロジェクトをサポート-)
+[![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive?logo=github&color=D4AF37)](#support-the-project-)
 [![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?logo=github&color=468FAF)](https://github.com/spike0en/nothing_archive/fork)
 
 [Nothing](https://nothing.tech/) および [CMF by Nothing](https://cmf.tech) デバイス用の **完全で変更がされていない Stock ROM** のコレクションと OTA アップデートのリンク集です。このアーカイブはユーザーが公式ファームウェアを Flash、デバイスを安全に root 化したり、さまざまなユースケースで Stock ROM を保存に役立ちます。OTA リンクは、公式のアップデートサーバーから直接取得されます。
