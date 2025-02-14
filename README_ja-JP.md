@@ -12,7 +12,7 @@
 [![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive?logo=github&color=D4AF37)](#support-the-project-)
 [![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?logo=github&color=468FAF)](https://github.com/spike0en/nothing_archive/fork)
 
-[Nothing](https://nothing.tech/) および [CMF by Nothing](https://cmf.tech) デバイス用の **完全で変更がされていない Stock ROM** のコレクションと OTA アップデートのリンク集です。このアーカイブはユーザーが公式ファームウェアを Flash、デバイスを安全に root 化したり、さまざまなユースケースで Stock ROM を保存に役立ちます。OTA リンクは、公式のアップデートサーバーから直接取得されます。
+このアーカイブは、[Nothing](https://nothing.tech/) および [CMF by Nothing](https://cmf.tech/) デバイス用の変更がされていない Stock OTA イメージ、アップデートリンク、および完全なファームウェアパッケージの最新版のコレクションを提供します。**ファームウェアファイルは公式サーバーから**直接インデックス化され、手動での Flash、サイドローディング、および長期の保存用に[アーカイブ](https://archive.org/details/nothing-archive)されます。Stock OTA イメージは AOSP の OTA 抽出ツールを使用して生成しています。
 
 ## ユースケース 💡  
 
