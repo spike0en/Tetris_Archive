@@ -12,17 +12,17 @@
 [![Stars](https://img.shields.io/github/stars/spike0en/nothing_archive?logo=github&color=D4AF37)](#support-the-project-)
 [![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?logo=github&color=468FAF)](https://github.com/spike0en/nothing_archive/fork)
 
+## このアーカイブについて 📢 
 このアーカイブは、[Nothing](https://nothing.tech/) および [CMF by Nothing](https://cmf.tech/) デバイス用の変更がされていない Stock OTA イメージ、アップデートリンク、および完全なファームウェアパッケージの最新版のコレクションを提供します。**ファームウェアファイルは公式サーバーから**直接インデックス化され、手動での Flash、サイドローディング、および長期の保存用に[アーカイブ](https://archive.org/details/nothing-archive)されます。Stock OTA イメージは AOSP の OTA 抽出ツールを使用して生成しています。
 
-## ユースケース 💡  
+## 機能とベネフィット 🚀    
 
-このアーカイブは、**Nothing** および **CMF** のデバイスに関係するさまざまなシナリオに対応する信頼性が高いソリューションです:
-
-- **手動の OTA アップデート:** 地域でのロールアウトが遅れている場合や、さまざまな理由でデバイスが OTA を受け取ることができない場合にデバイスの OTA をサイドロードできます。
-- **root 化のサポート:** デバイスを安全に root 化または、非 root 化を行うための Stock boot イメージにアクセスできます。
-- **ファームウェアの復元や Flash:** カスタム ROM のインストール後に Stock ROM に戻したり、デバイスをカスタム ROM 用にする準備ができます。
-- **ファームウェアのアーカイブ:** 将来的な使用、テストの目的で OEM ファームウェアバージョンをアーカイブとして残すことができます。
-
+- **インデックスの作成:** Nothing および CMF デバイスの OEM サーバーから公式の OTA アップデートリンクを直接インデックスします。
+- **サイドローディング:** リージョンベースのロールアウト時、またはデバイスが OTA アップデートを受信できない場合に手動でアップデートをサイドローディングすることができます。手順については [OTA サイドローディングのガイド](https://telegra.ph/OTA-Sideloading-Guide-for-Nothing-Devices-01-17)をご確認ください。
+- **保存:** ロールバック、テスト、ダンプ、または復元用として使用可能なすべてのファームウェアバージョンを保存できます。
+- **Stock OTA イメージ:** OEM から完全なストックファームウェアを入手できない場合に、変更が一切されていない Stock OTA イメージを生成します。
+- **root 化のサポート:** サポートされているデバイスで、使用可能な root 化、または root 化の解除をするために必要な Stock イメージファイルを提供します。
+- **ファームウェアの Flash と アンブリック:** ブートループ、ソフトブリックの解決、カスタム ROM からのリストアをするために公式ファームウェアまたは、パーティションイメージを Flash できます。
 ## サポートしているモデル 📱
 
 #### ROM に関する説明と注意事項
