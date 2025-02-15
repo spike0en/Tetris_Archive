@@ -12,31 +12,47 @@
 [![Forks](https://img.shields.io/github/forks/spike0en/nothing_archive?logo=github&color=468FAF)](https://github.com/spike0en/nothing_archive/fork)
 [![Latest Release](https://img.shields.io/github/release/spike0en/nothing_archive?label=Latest%20Release&logo=git&logoColor=white&color=1E6091)](https://github.com/spike0en/nothing_archive/releases/latest)
 
+## Index 📑  
+
+- [About](#about-)
+- [Features & Benefits](#features--benefits-)
+- [Downloads](#downloads-)
+- [Flashing the Stock ROM Using Fastboot](#flashing-the-stock-rom-using-fastboot-)
+- [Disclaimer](#disclaimer-)
+- [Acknowledgments](#acknowledgments-)
+- [Support the Project](#support-the-project-)
+
 ## About 📢  
 
-This archive provides the most up-to-date collection of unaltered stock OTA images, update links, and full firmware packages for [Nothing](https://nothing.tech) & [CMF by Nothing](https://cmf.tech) devices. **Firmware files are indexed directly from official servers** and [archived](https://archive.org/details/nothing-archive) for manual flashing, sideloading, and long-term preservation. Additionally, stock OTA images are generated using AOSP's OTA extraction tool.
+**Nothing Archive** is the most up-to-date Nothing OS firmware repository, offering official OTA updates, full firmware packages, and stock OTA images for **Nothing Phone (1), Phone (2), Phone (2a), Phone (2a) Plus**, and **CMF Phone (1)**, all sourced directly from official OEM servers. All files are [archived](https://archive.org/details/nothing-archive), ensuring easy access and long-term preservation.
 
-## Features & Benefits 🚀  
+## Features & Benefits 🚀 
 
-- **Indexing:** Indexes official OTA update links directly from OEM servers for Nothing and CMF devices.  
-- **Sideloading:** Manually sideload updates during region-based rollouts or when the device is unable to install or receive OTA updates. Check out the **[OTA Sideloading Guide](https://telegra.ph/OTA-Sideloading-Guide-for-Nothing-Devices-01-17)** for instructions.  
-- **Preservation:** Preserves all available firmware versions for rollback, testing, dumping, or restoration.  
-- **Stock OTA Images:** Generates stock, unmodified OTA images when full stock firmware is not available from OEM.  
-- **Rooting Support:** Offers stock boot image files for patching them for rooting via available methods or unrooting if needed for supported devices.  
-- **Firmware Flashing & Unbricking:** Flash official firmware or partition images to resolve boot loops, soft bricks, or revert from custom ROMs.
+- 📡 **Direct OTA Indexing** – Tracks **Nothing OS OTA update links** from official servers, providing access to **incremental and full updates** for Nothing and CMF devices.  
+- 🛠️ **Manual Installation (Sideloading)** – Install **Nothing OS firmware manually** during staged rollouts or when OTA updates fail using the inbuilt **offline Nothing OS offline updater or beta updater app** or via **ADB sideload** using a custom recovery when available. 
+- 📦 **Stock OTA Images** – Provides **unmodified OTA images** utilizing AOSP’s OTA extraction tool that allows extracting incremental OTA updates, thus enabling **upgrades, downgrades, and partition flashing** when **full firmware packages** are unavailable.  
+- 🔓 **Rooting & Unrooting Support** – Provides **stock boot images for Magisk, KernelSU, and Apatch**, while also allowing **unrooting** by flashing the original boot image to keep **OTA updates functional** when modified partitions are detected.  
+- ⚡ **Flash Firmware & Unbrick Devices** – Provides **fastboot-flashable Nothing OS firmware** to help **resolve boot loops, recover soft-bricked devices, and restore the stock ROM**, as long as fastboot is accessible.
 
 ## Downloads 📥  
 
-Select your **device model** from the dropdown list below to access **Release Index**:
+- Releases for OTA images are tagged and named using the format: `NothingOS Version`-`Device Codename`.`Incremental Date` and `POST_OTA_VERSION`_`NothingOS Version`, as shown [here](https://github.com/spike0en/nothing_archive/releases), respectively.  
+- For releases with a Nothing OS version in the format X.Y.Za and X.Y, tags are renamed to X.Y.0-A and X.Y.0 respectively for proper sorting (e.g., `2.5.5A` → `2.5.5-A`, `2.6` → `2.6.0`, `3.0` → `3.0.0`).
+- Android Developer preview releases are tagged as `0.0.0-DP`-`Device Codename`.`Incremental Date`.  
+- Unless specifically stated otherwise in the release notes, the releases published here are compatible with all regional and color variants of the device.  
+- For detailed instructions on interpreting the required incremental OTA firmware, refer to this [OTA Sideloading Guide](https://telegra.ph/OTA-Sideloading-Guide-for-Nothing-Devices-01-17).
 
-<details>
-  <summary>Nothing Phone (1) - Spacewar</summary>
+### Supported Models 📱  
 
-<br>
+Click on the respective device name to quickly navigate to its respective release index:  
 
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/spacewar).
+**⚪ Nothing:** [Phone (1)](#nothing-phone-1) · [Phone (2)](#nothing-phone-2) · [Phone (2a)](#nothing-phone-2a) · [Phone (2a) Plus](#nothing-phone-2a-plus)  
 
-<br>
+**🔴 CMF by Nothing:** [Phone (1)](#cmf-phone-1)   
+
+---
+
+#### Nothing Phone (1)
 
 | **Nothing OS Version** | **Build No.**     | **Incremental OTA**                                | **Full OTA**                           | **OTA Images**          |
 |------------------|-------------------|-----------------------------------------------------|-------------------------------------------------------|-------------------------|
@@ -60,16 +76,9 @@ Select your **device model** from the dropdown list below to access **Release In
 | 1.5.3 HOTFIX | Spacewar_T1.5-230317-2039 | Spacewar_T1.5-230310-1650 -> [Spacewar_T1.5-230317-2039](https://android.googleapis.com/packages/ota-api/package/364c55148c84d22efab1c58953d807e40da040a9.zip) | [Here](https://archive.org/download/nothing-archive/full_ota/spacewar/Spacewar_T1.5-230317-2039_1.5.3-Hotfix.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/1.5.3-spacewar.230317) |
 | 1.5.3 | Spacewar-T1.5-230310-1650 | Spacewar_T1.5-230213-2131 -> [Spacewar_T1.5-230310-1650](https://android.googleapis.com/packages/ota-api/package/68158669e0fc6d6eee95e2612c2e84ed840faeec.zip) | N/A | [Here](https://github.com/spike0en/nothing_archive/releases/tag/1.5.2-spacewar.230213) |
 
-</details>
+---
 
-<details>
-  <summary>Nothing Phone (2) - Pong</summary>
-  
-<br>
-
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/pong).
-
-<br>
+#### Nothing Phone (2)
 
 | **Nothing OS Version** | **Build No.**     | **Incremental OTA**                                 | **Full OTA**                           | **OTA Images**          |
 |------------------|-------------------|-----------------------------------------------------|-------------------------------------------------------|-------------------------|
@@ -96,17 +105,10 @@ Select your **device model** from the dropdown list below to access **Release In
 | 2.0.1A | Pong-T2.0-230719-1458 | Pong_T2.0-230709-2003 -> [Pong_T2.0-230719-1458](https://android.googleapis.com/packages/ota-api/package/d0f3e3e897154d513c91634ad225da1b724c9455.zip) | N/A | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.0.1-A-pong.230719) |
 | 2.0.1 | Pong-T2.0-230709-2003 | N/A | [Here](https://android.googleapis.com/packages/ota-api/package/7becde0f47753b99a7cc37ff27713ba8a48ef51a.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.0.1-pong.230709) |
 
-</details>
+---
 
-<details>
-  <summary>Nothing Phone (2a) - Pacman</summary>
-  
-<br>
-
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/pacman).
+#### Nothing Phone (2a)
 **Note**: Versions 2.5.3 to 2.5.5A are compatible only with the Milk, White, and Black variants of the device. Versions 2.5.6 and higher support all color variants, including Blue and the Special Edition.
-
-<br>
 
 | **Nothing OS Version** | **Build No.**     | **Incremental OTA**                                 | **Full OTA**                           | **OTA Images**          |
 |------------------|-------------------|-----------------------------------------------------|-------------------------------------------------------|-------------------------|
@@ -126,16 +128,9 @@ Select your **device model** from the dropdown list below to access **Release In
 | 2.5.3 | Pacman-U2.5-240301-2206 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/pacman/Pacman_U2.5-240301-2206_2.5.3.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.5.3-pacman.240301) |
 | 2.5 | Pacman-U2.5-231207-0042 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/pacman/Pacman_U2.5-231207-0042_2.5.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.5.0-pacman.231207) |
 
-</details>
+---
 
-<details>
-  <summary>Nothing Phone (2a) Plus - PacmanPro</summary>
-  
-<br>
-
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/pacman).
-
-<br>
+#### Nothing Phone (2a) Plus
 
 | **Nothing OS Version** | **Build No.**     | **Incremental OTA**                                 | **Full OTA**                           | **OTA Images**          |
 |------------------|-------------------|-----------------------------------------------------|-------------------------------------------------------|-------------------------|
@@ -146,16 +141,9 @@ Select your **device model** from the dropdown list below to access **Release In
 | 2.6 | PacmanPro-U2.6-240924-2223 | PacmanPro_U2.6-240723-1102 -> [PacmanPro_U2.6-240924-2223](https://android.googleapis.com/packages/ota-api/package/b8d1f9e6b3de2f85bc2ca29632bb11b23686078f.zip) | [Here](https://archive.org/download/nothing-archive/full_ota/pacmanpro/PacmanPro_U2.6-240924-2223_2.6.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.6.0-pacmanpro.240924) |
 | 2.6 | PacmanPro-U2.6-240723-1102 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/pacmanpro/PacmanPro_U2.6-240723-1102.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.6.0-pacmanpro.240827) |
 
-</details>
+---
 
-<details>
-  <summary>CMF Phone (1) - Tetris</summary>
-  
-<br>
-
-**Instructions**: For more detailed installation instructions, visit [here](https://github.com/spike0en/nothing_archive/tree/tetris).
-
-<br>
+#### CMF Phone (1)
 
 | **Nothing OS Version** | **Build No.**     | **Incremental OTA**                                 | **Full OTA**                           | **OTA Images**          |
 |------------------|-------------------|-----------------------------------------------------|-------------------------------------------------------|-------------------------|
@@ -171,15 +159,31 @@ Select your **device model** from the dropdown list below to access **Release In
 | 2.6 | Tetris-U2.6-240713-1955 | Tetris_U2.6-240702-2200 -> [Tetris-U2.6-240713-1955](https://android.googleapis.com/packages/ota-api/package/24c251bfc97dbe9a32777af2677e979e38bfcef2.zip) // Tetris_U2.6-240606-1805 -> [Tetris_U2.6-240713-1955](https://android.googleapis.com/packages/ota-api/package/d84e482fad907cef29a0de4dc344d18e61adf42a.zip) // Tetris_U2.6-240524-1536 -> [Tetris_U2.6-240713-1955](https://android.googleapis.com/packages/ota-api/package/72b82b535759b4559d0eb60c20e9ceabd303872a.zip) | N/A | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.6.0-tetris.240713) |
 | 2.6 | Tetris-U2.6-240702-2200 | N/A | [Here](https://archive.org/download/nothing-archive/full_ota/tetris/Tetris_U2.6-240702-2200_2.6.zip) | [Here](https://github.com/spike0en/nothing_archive/releases/tag/2.6.0-tetris.240702) |
 
-</details>
+---
 
-## Disclaimer ⚠️  
+## Flashing the Stock ROM Using Fastboot ⚡
 
-- **Authenticity** – Firmware is sourced **directly from OEM servers** without modifications.
-- **Manual Flashing** – The releases are compatible with all regional variants of the device unless stated otherwise.
-- **Archived Builds** – Archived versions are available for firmware no longer available on official servers.
-- **Use at Your Own Risk** – The project **is not responsible** for any issues or bugs in the OS. Firmware is **unaltered**, and only the OEM is accountable for its reliability. Users should **carefully follow instructions** and proceed at their own discretion.
-- **Respect Open Source** – Redistribution of this archive’s files in any form is **strictly discouraged**. Please consider supporting the project instead of mirroring its content.
+Proceed only with an unlocked bootloader state!
+- Download and use the latest version of Fastboot [directly from Google](https://developer.android.com/tools/releases/platform-tools). Compatible USB drivers can be obtained from [here](https://developer.android.com/studio/run/win-usb). Ensure the `Android Bootloader Interface` is visible in the Device Manager when your device is in bootloader mode before initiating the flashing process.
+- To flash the stock, unmodified images via Fastboot:
+  - Extract the downloaded files using [7zip](https://www.7-zip.org/). If you are using Windows, select the `boot`, `firmware`, and `logical 001-00x.7z` files all at once, right-click, and choose **Extract to** `"*\"`. Linux users can use the command `7za -y x "*7z*"`
+  - Move all images into a single folder along with the [Fastboot Flashing Script](https://github.com/spike0en/nothing_fastboot_flasher) (refer to the respective device branch) or [Universal Flashing Program](https://github.com/PHATWalrus/universal-flasher). Always download the latest version of the script or program in case new hotfixes were pushed recently.
+  - Run the script while being connected to the internet (for fetching the latest `platform-tools`), and follow the prompts:
+    - Choose whether to wipe data: `(Y/N)`
+    - Flash to both slots: `(Y/N)`
+    - Disable Android Verified Boot: `(N)`
+- Verify that all partitions have been successfully flashed. 
+  - If successful, choose Reboot to system: `(Y)`
+  - If any errors occur, reboot to bootloader and flash again after addressing the cause of failure. Proceeding with `Reboot to system` in such cases may result in a soft or hard bricked device.
+
+## Disclaimer 🚨  
+
+By using this archive, users acknowledge and accept these terms:
+- **✅ Authenticity** – All firmware files in this archive are **unaltered, unmodified, and sourced directly from the OEM**.  
+- **⚠️ Flash at Your Own Risk** – Installing firmware on an **unlocked bootloader** device carries inherent risks. Follow instructions carefully to **avoid bricking your device**.  
+- **📌 Compatibility** – Ensure the firmware matches your **Nothing or CMF device variant** before installation.
+- **🚫 No Warranty or Official Support** – This is a **community-driven project, unaffiliated with [Nothing](https://nothing.tech)**. Any **update failures, software bugs, or device issues** remain the OEM’s responsibility. The author and contributors **are not liable for bricked devices** due to incorrect flashing, misuse, or firmware modifications. Always download firmware **directly from this archive** to ensure integrity.  
+- **🛡️ Open Source Integrity** – Redistribution is permitted **only with proper attribution**. Users are encouraged to support and share this project **to maintain its availability**. **Reselling freely available firmware is strictly prohibited!**  
 
 ## Acknowledgments 🤝  
 
