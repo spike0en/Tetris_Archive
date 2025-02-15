@@ -1,5 +1,9 @@
 #!/bin/bash
-# Script has been modified by Spike for additional functionality and clarity, originally by arter97 and luk1337.
+#
+# SPDX-FileCopyrightText: luk1337
+# SPDX-License-Identifier: MIT
+#
+# Modified by: spike0en
 
 # Print every command and exit immediately on failure
 set -ex 
