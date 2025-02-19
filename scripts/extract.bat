@@ -194,10 +194,10 @@ set /p DEVICE_CHOICE=Enter your selection:
 
 :: Map user choice to the correct URL
 set "FLASH_SCRIPT_URL="
-if "%DEVICE_CHOICE%"=="1" set "FLASH_SCRIPT_URL=https://github.com/spike0en/nothing_fastboot_flasher/raw/spacewar/Windows/flash_all.bat"
-if "%DEVICE_CHOICE%"=="2" set "FLASH_SCRIPT_URL=https://github.com/spike0en/nothing_fastboot_flasher/raw/pong/Windows/flash_all.bat"
-if "%DEVICE_CHOICE%"=="3" set "FLASH_SCRIPT_URL=https://github.com/spike0en/nothing_fastboot_flasher/raw/pacman/Windows/flash_all.bat"
-if "%DEVICE_CHOICE%"=="4" set "FLASH_SCRIPT_URL=https://github.com/spike0en/nothing_fastboot_flasher/raw/tetris/Windows/flash_all.bat"
+if "%DEVICE_CHOICE%"=="1" set "FLASH_SCRIPT_URL=https://raw.githubusercontent.com/spike0en/nothing_fastboot_flasher/spacewar/Windows/flash_all.bat"
+if "%DEVICE_CHOICE%"=="2" set "FLASH_SCRIPT_URL=https://raw.githubusercontent.com/spike0en/nothing_fastboot_flasher/pong/Windows/flash_all.bat"
+if "%DEVICE_CHOICE%"=="3" set "FLASH_SCRIPT_URL=https://raw.githubusercontent.com/spike0en/nothing_fastboot_flasher/pacman/Windows/flash_all.bat"
+if "%DEVICE_CHOICE%"=="4" set "FLASH_SCRIPT_URL=https://raw.githubusercontent.com/spike0en/nothing_fastboot_flasher/tetris/Windows/flash_all.bat"
 if /I "%DEVICE_CHOICE%"=="X" exit /b
 
 :: Validate selection
@@ -210,18 +210,22 @@ if "%FLASH_SCRIPT_URL%"=="" (
 :: Ensure extraction directory exists
 if not exist "%EXTRACT_DIR%" mkdir "%EXTRACT_DIR%"
 
-:: Download the corresponding flash_all.bat script using curl
-echo Downloading flash script for your device...
-curl --ssl-no-revoke -L -o "%EXTRACT_DIR%\flash_all.bat" "%FLASH_SCRIPT_URL%"
+:: Download the corresponding flash_all.bat script using curl and retry on failure
+set "MAX_RETRIES=3"
+set "RETRY_DELAY=5"
 
-:: Check if download was successful
-if %errorlevel% neq 0 (
-    echo Failed to download the script. 
-    echo Please check your internet connection.
-    pause
-    exit /b
+for /L %%i in (1,1,%MAX_RETRIES%) do (
+    echo Attempt %%i of %MAX_RETRIES%: Downloading...
+    curl --ssl-no-revoke -L -o "%EXTRACT_DIR%\flash_all.bat" "%FLASH_SCRIPT_URL%" && goto :success
+    echo Download failed. Retrying in %RETRY_DELAY% seconds...
+    timeout /t %RETRY_DELAY% /nobreak >nul
 )
 
+echo All download attempts failed! Please check your internet connection.
+pause
+exit /b
+
+:success
 echo Download complete. Saved to: %EXTRACT_DIR%\flash_all.bat
 echo.
 echo =========================================================
