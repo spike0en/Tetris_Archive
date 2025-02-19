@@ -169,18 +169,32 @@ Click on the respective device name to quickly navigate to its respective releas
 
 ## Flashing the Stock ROM Using Fastboot ⚡
 
-Proceed only with an unlocked bootloader state!
-- Download and use the latest version of Fastboot [directly from Google](https://developer.android.com/tools/releases/platform-tools). Compatible USB drivers can be obtained from [here](https://developer.android.com/studio/run/win-usb). Ensure the `Android Bootloader Interface` is visible in the Device Manager when your device is in bootloader mode before initiating the flashing process.
-- To flash the stock, unmodified images via Fastboot:
-  - Extract the downloaded files using [7zip](https://www.7-zip.org/). If you are using Windows, select the `boot`, `firmware`, and `logical 001-00x.7z` files all at once, right-click, and choose **Extract to** `"*\"`. Linux users can use the command `7za -y x "*7z*"`
-  - Move all images into a single folder along with the [Fastboot Flashing Script](https://github.com/spike0en/nothing_fastboot_flasher) (refer to the respective device branch) or [Universal Flashing Program](https://github.com/PHATWalrus/universal-flasher). Always download the latest version of the script or program in case new hotfixes were pushed recently.
-  - Run the script while being connected to the internet (for fetching the latest `platform-tools`), and follow the prompts:
-    - Choose whether to wipe data: `(Y/N)`
-    - Flash to both slots: `(Y/N)`
-    - Disable Android Verified Boot: `(N)`
+### A. Preparation of Flashing Folder
+- Download the following files from the assets section of the releases for the corresponding device model and firmware build, and place them in a dedicated folder:
+   - `-image-boot.7z`
+   - `-image-firmware.7z`
+   - `image-logical.7z.001-00x`
+- Ensure that [7-Zip](https://www.7-zip.org/) is installed on the system.
+- For Windows users:
+   - Right-click on the downloaded files and select **Extract to** `"*\"`.
+   - Alternatively, use [this script](https://github.com/spike0en/nothing_archive/blob/main/scripts/extract.bat) by placing it in the same directory as the downloaded archive files and running it. The script will guide through the extraction process and download the flashing script directly to the flashing folder.
+- For bash users, use the following command to extract the files:
+   ```bash
+   7za -y x "*7z*"
+   ```
+
+### B. Proceeding with Flashing
+- Install compatible USB drivers from [here](https://developer.android.com/studio/run/win-usb). Ensure that the `Android Bootloader Interface` is visible in the Device Manager when the device is in bootloader mode before starting the flashing process.
+- If the extraction script was used earlier for Windows, proceed by executing the script directly from the flashing folder. If not:
+   - Move all image files into a single folder along with the [Fastboot Flashing Script](https://github.com/spike0en/nothing_fastboot_flasher/blob/main/README.md#-download). Always download the latest version of the script to ensure the latest hotfixes are included.
+- Run the script while connected to the internet (to fetch the latest `platform-tools`) and follow the prompts:
+   - Answer the initial confirmation questionnaire.
+   - Choose whether to wipe data: `(Y/N)`
+   - Choose whether to flash to both slots: `(Y/N)`
+   - Disable Android Verified Boot: `(N)`
 - Verify that all partitions have been successfully flashed. 
-  - If successful, choose Reboot to system: `(Y)`
-  - If any errors occur, reboot to bootloader and flash again after addressing the cause of failure. Proceeding with `Reboot to system` in such cases may result in a soft or hard bricked device.
+   - If successful, choose to reboot to system: `(Y)`
+   - If any errors occur, reboot to bootloader and flash again after addressing the cause of failure. Proceeding with `Reboot to system` in such cases may result in a soft or hard bricked device.
 
 ## Disclaimer 🚨  
 
